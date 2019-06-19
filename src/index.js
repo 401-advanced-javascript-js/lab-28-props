@@ -1,22 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './styles.css';
+import App from './app';
 
-class App extends React.Component {
+class Main extends React.Component {
   render() {
-    return <div />;
-  }
-}
-
-class Message extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: 'Hello World',
-    };
+    return <App />;
   }
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Main />, rootElement);
